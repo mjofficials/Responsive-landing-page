@@ -1,0 +1,25 @@
+/* CUSTOM MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #lb-img img {
+    max-width: 75%;
+    max-height: 500px;
+  }
+  .section.gallery .filters-content .grid-item {
+    padding: 0 50px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .section.gallery .filters-content .grid-item {
+    padding: 0 50px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .section.gallery .filters-content .grid-item {
+    padding: 20px 30px;
+  }
+}
