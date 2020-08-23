@@ -6,15 +6,13 @@
     max-height: 500px;
   }
   .section.gallery .filters-content .grid-item {
-    padding: 0 50px;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+    text-align: center;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .section.gallery .filters-content .grid-item {
-    padding: 0 50px;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+    text-align: center;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
