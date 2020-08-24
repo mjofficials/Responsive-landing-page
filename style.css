@@ -9,7 +9,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 10px;
   height: 100%;
- -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 .nav {
   width: 100%;
@@ -420,6 +420,7 @@ body {
 .cards-grid-item figure img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 .cards-grid-item figcaption {
   display: block;
@@ -466,25 +467,25 @@ body {
 .section.gallery .filters ul li {
   list-style: none;
   display: inline-block;
-  padding: 20px 30px;
+  padding: 5px 10px;
   cursor: pointer;
   position: relative;
 }
 .section.gallery .filters ul li:after {
   content: "";
   display: block;
-  width: calc(0% - 60px);
+  width: calc(0% - 24px);
   position: absolute;
   height: 2px;
   background: #000000;
   transition: width 350ms ease-out;
 }
 .section.gallery .filters ul li:hover:after {
-  width: calc(100% - 60px);
+  width: calc(100% - 24px);
   transition: width 350ms ease-out;
 }
 .section.gallery .filters ul li.active:after {
-  width: calc(100% - 60px);
+  width: calc(100% - 24px);
 }
 .section.gallery .filters-content {
   margin-top: 50px;
