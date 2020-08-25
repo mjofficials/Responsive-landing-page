@@ -605,8 +605,8 @@ article.row-content div {
   #idea img {
     position: absolute;
     bottom: 10px;
-    left: 2px;
-    width: 100%;
+    left: 45px;
+    width: 80%;
     height: auto;
   }
 }
