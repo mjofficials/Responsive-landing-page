@@ -47,13 +47,12 @@ body {
   height: 65px;
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 10;
   padding: 0;
 }
 .nav div.main_list ul li {
   width: auto;
   height: 65px;
-  padding: 0;
   padding-right: 3rem;
 }
 .nav div.main_list ul li a {
@@ -68,13 +67,38 @@ body {
 .navTrigger {
   display: none;
 }
+.affix {
+  padding-top: 0;
+  background-color: #111;
+}
 /* Media qurey section */
+/* TABLETS */
 @media screen and (max-width: 768px) {
-  .navTrigger {
-    display: block;
+  body {
+    padding: 0 30px 0 30px;
+  }
+  nav.nav {
+    width: 92.2%;
+    height: 65px;
+    position: fixed;
+    z-index: 1;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    box-sizing: border-box;
   }
   .nav div.logo {
-    margin-left: 15px;
+    float: left;
+    line-height: 0;
+  }
+  .nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: "Hind Madurai", sans-serif;
+    line-height: 1;
+  }
+  .navTrigger {
+    display: block;
   }
   .nav div.main_list {
     width: 100%;
@@ -94,36 +118,112 @@ body {
     bottom: 0;
     background-color: #111;
     opacity: 0.9;
-    /*same background color of navbar*/
     background-position: center top;
   }
   .nav div.main_list ul li {
-    width: 100%;
     text-align: right;
+    padding: 3rem 3rem 0 0;
   }
   .nav div.main_list ul li a {
     text-align: center;
-    width: 100%;
     font-size: 3rem;
-    padding: 20px;
   }
-  .nav div.media_button {
-    display: block;
+  nav.nav.affix {
+    padding-top: 25px;
   }
 }
-/* Home section */
+/* MOBILE-L-SIZES */
+@media screen and (max-width: 425px) {
+  nav.nav {
+    width: 85.8%;
+    height: 65px;
+    position: fixed;
+    z-index: 1;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    box-sizing: border-box;
+  }
+  .nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .nav div.main_list ul li a {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  nav.nav {
+    width: 84%;
+  }
+}
+@media screen and (max-width: 320px) {
+  nav.nav {
+    width: 81.2%;
+  }
+  .navTrigger {
+    cursor: pointer;
+    width: 20px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+  }
+  .nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .nav div.main_list ul li {
+    text-align: right;
+    padding: 2rem 2rem 0 0;
+  }
+  .nav div.main_list ul li a {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav.nav {
+    width: 92.2%;
+  }
+}
+/* ************ */
+/* HOME SECTION */
+/* ************ */
 .home-slider {
   max-width: 100%;
-  height: 450px;
+  height: 400px;
   margin: 0;
   position: relative;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 375px) {
+  .home-slider {
+    max-width: 100%;
+    height: 175px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .home-slider {
+    max-width: 100%;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home-slider {
+    max-width: 100%;
+    height: 350px;
+  }
+}
 .slide1,
 .slide2,
-.slide3,
-.slide4,
-.slide5 {
+.slide3 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -143,7 +243,7 @@ body {
   -webkit-animation: fade2 16s infinite;
 }
 .slide3 {
-  background: url(https://eoligive.sirv.com/Banner/color-resized.jpg) no-repeat
+  background: url(https://eoligive.sirv.com/Banner/gym-resized-re.jpg) no-repeat
     center;
   background-size: cover;
   animation: fade3 16s infinite;
@@ -241,7 +341,9 @@ body {
   -webkit-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards;
 }
-/* Keyframes */
+/* ********** */
+/* KEY FRAMES */
+/* ********** */
 @-webkit-keyframes inM {
   50% {
     -webkit-transform: rotate(0deg);
@@ -362,11 +464,156 @@ body {
     transform: translateY(-9px) rotate(135deg);
   }
 }
-.affix {
-  padding: 0;
-  background-color: #111;
+
+/* ************* */
+/* ABOUT SECTION */
+/* ************* */
+
+#about-box {
+  background: #fff;
+  padding: 40px 0px 80px;
+  font-family: "Open Sans", sans-serif;
 }
+#about-box h1 {
+  text-align: center;
+  font-size: 5.125em;
+}
+#about-box h3 {
+  font-size: 26px;
+}
+#about-box a {
+  color: #70bcb8;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+#about-box a:hover {
+  color: #8e7bb2;
+}
+article.row-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+article.row-content div {
+  width: 49.4%;
+  display: inline-block;
+  position: relative;
+}
+#idea img {
+  position: absolute;
+  bottom: -66px;
+  left: 50px;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 375px) {
+  #about-box {
+    background: #fff;
+    padding: 15px;
+    font-family: "Open Sans", sans-serif;
+  }
+  #about-box h1 {
+    text-align: center;
+    font-size: 2.125em;
+  }
+  #about-box h3 {
+    font-size: 10px;
+  }
+  #about-box p,
+  #about-box a {
+    font-size: 8px;
+  }
+  article.row-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  article.row-content div {
+    width: 49.4%;
+    display: inline-block;
+    position: relative;
+  }
+  #idea img {
+    position: absolute;
+    bottom: 30px;
+    left: 2px;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #about-box {
+    background: #fff;
+    padding: 20px;
+  }
+  #about-box h1 {
+    text-align: center;
+    font-size: 3.125em;
+  }
+  #about-box h3 {
+    font-size: 20px;
+  }
+  #about-box p,
+  #about-box a {
+    font-size: 10px;
+  }
+  article.row-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  article.row-content div {
+    width: 49.4%;
+    display: inline-block;
+    position: relative;
+  }
+  #idea img {
+    position: absolute;
+    bottom: 20px;
+    left: 2px;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #about-box h1 {
+    text-align: center;
+    font-size: 3.125em;
+  }
+  #about-box h3 {
+    font-size: 30px;
+  }
+  #about-box p,
+  #about-box a {
+    font-size: 20px;
+  }
+  article.row-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  article.row-content div {
+    width: 49.4%;
+    display: inline-block;
+    position: relative;
+  }
+  #idea img {
+    position: absolute;
+    bottom: 10px;
+    left: 2px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ************* */
 /* CARDS SECTION */
+/* ************* */
 *,
 *:before,
 *:after {
@@ -388,15 +635,9 @@ body {
   padding-right: 1s.5rem;
   margin-bottom: 1rem;
 }
-@media screen and (max-width: 768px) {
-  .cards-grid-item {
-    min-width: 150px;
-    max-width: 150px;
-  }
-}
 .wrapper {
   padding: 2rem 0;
-  background: #99ffff;
+  background: #fff;
   color: #000000;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -425,11 +666,43 @@ body {
 .cards-grid-item figcaption {
   display: block;
   padding: 0.625rem 0.5rem;
-  background: #949599;
+  background: #ffffff;
   font-family: "Nunito", sans-serif;
   font-size: 1.5em;
 }
+/* ************************* */
+/* CARDS MEDIA-QUERY SECTION */
+/* ************************* */
+/* 400px and Down */
+@media only screen and (max-width: 400px) {
+  .wrapper h1 {
+    font-size: 3.125em;
+    line-height: 1;
+  }
+  .wrapper p {
+    font-size: 2em;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+}
+/* Between 576px and 400px */
+@media screen and (max-width: 576px) and (min-width: 400px) {
+  .wrapper h1 {
+    font-size: 4.125em;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cards-grid-item {
+    min-width: 150px;
+    max-width: 150px;
+  }
+}
+/* *************** */
 /* GALLERY SECTION */
+/* *************** */
 .gallery-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -514,6 +787,91 @@ body {
   max-width: 150px;
   max-height: 175px;
 }
+/* ***************************** */
+/* GALLERY MEDIA QUERIES SECTION */
+/* ***************************** */
+/* 600px and Down */
+@media only screen and (max-width: 600px) {
+  #lb-img img {
+    max-width: 75%;
+    max-height: 500px;
+  }
+  .section.gallery .filters-content .grid-item {
+    text-align: center;
+  }
+}
+/* 676 and Down */
+@media only screen and (max-width: 676px) {
+  .section {
+    font-size: 1.2rem;
+  }
+  .section .top-side .title {
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+  }
+  .section .top-side .title:after {
+    content: "";
+    display: block;
+    width: 50%;
+    border-bottom: 1px solid #494949;
+    margin: 8px auto;
+  }
+  .section.gallery .filters ul li {
+    padding: 5px 10px;
+  }
+  .section.gallery .filters ul li:after {
+    content: "";
+    display: block;
+    width: calc(0% - 20px);
+    position: absolute;
+    height: 2px;
+    background: #000000;
+    transition: width 350ms ease-out;
+  }
+  .section.gallery .filters ul li:hover:after {
+    width: calc(100% - 20px);
+    transition: width 350ms ease-out;
+  }
+  .section.gallery .filters ul li.active:after {
+    width: calc(100% - 20px);
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .section.gallery .filters-content .grid-item {
+    text-align: center;
+  }
+}
+/* 676px and UP */
+@media only screen and (min-width: 676px) {
+  .section.gallery .filters ul li {
+    padding: 5px 30px;
+  }
+  .section.gallery .filters ul li:after {
+    content: "";
+    display: block;
+    width: calc(0% - 60px);
+    position: absolute;
+    height: 2px;
+    background: #000000;
+    transition: width 350ms ease-out;
+  }
+  .section.gallery .filters ul li:hover:after {
+    width: calc(100% - 60px);
+    transition: width 350ms ease-out;
+  }
+  .section.gallery .filters ul li.active:after {
+    width: calc(100% - 60px);
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .section.gallery .filters-content .grid-item {
+    padding: 20px 30px;
+  }
+}
+
 /* Reset height from having an defined to percentage
 and use spans to define size */
 .hero,
