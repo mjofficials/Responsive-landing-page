@@ -6,7 +6,6 @@
     <title>project01</title>
     <!-- CSS links -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
     <!-- ANIMATE CDN -->
     <!-- <link
       rel="stylesheet"
@@ -16,7 +15,9 @@
     <script src="https://scripts.sirv.com/sirv.js"></script>
   </head>
   <body>
+    <!--------------------->
     <!-- NAV-BAR SECTION -->
+    <!--------------------->
     <section class="home">
       <nav class="nav">
         <div class="container">
@@ -26,7 +27,7 @@
           <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
               <li><a href="#">About</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="#gallery-part">Gallery</a></li>
               <li><a href="#">Portfolio</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Contact</a></li>
@@ -45,7 +46,54 @@
         <div class="slide3"></div>
       </div>
     </section>
+    <div id="about-box">
+      <h1>About us</h1>
+      <article class="row-content" id="idea">
+        <div>
+          <h3>Who we are</h3>
+          <p>
+            Aram Kalaiyagam in Erode is one of a top player in the category
+            Dance Classes. This well-known establishment acts as a one-stop
+            destination servicing customers both local and from other parts of
+            Erode.
+          </p>
+          <a href="#">Link to read more</a>
+        </div>
+        <div>
+          <img
+            src="https://eoligive.sirv.com/Banner/aram%203-banner.jpg?w=1200"
+            width="1200"
+            height="856"
+            alt=""
+          />
+        </div>
+      </article>
+    </div>
+    <!-- <section id="about-part">
+      <div class="about-wrapper">
+        <div class="about-content">
+          <h1>About us</h1>
+          <p>
+            Established in the year 2019, Aram Kalaiyagam in Soolai, Erode is a
+            top player in the category Dance Classes in the Erode. This
+            well-known establishment acts as a one-stop destination servicing
+            customers both local and from other parts of Erode.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://eoligive.sirv.com/Banner/aram%203-banner.jpg?w=1200"
+            width="1200"
+            height="856"
+            alt=""
+          />
+        </div>
+      </div>
+    </section> -->
+    <!------------------>
     <!-- CARD SECTION -->
+    <!------------------>
+    <!-- card section start -->
     <div class="wrapper">
       <h1>We Can Teach You</h1>
       <p>Our programs</p>
@@ -75,8 +123,8 @@
         <div class="cards-grid-item">
           <figure>
             <img
-              src="https://eoligive.sirv.com/yoga-new-pose.jpg?w=235&h=156&scale.option=ignore"
-              width="235"
+              src="https://eoligive.sirv.com/program%20images/yoga-2-resized.jpg"
+              width="234"
               height="156"
               alt=""
             />
@@ -97,8 +145,8 @@
         <div class="cards-grid-item">
           <figure>
             <img
-              src="https://eoligive.sirv.com/silambam-new.jpg?w=235&h=156&scale.option=ignore"
-              width="235"
+              src="https://eoligive.sirv.com/program%20images/silambam-re.jpg"
+              width="234"
               height="156"
               alt=""
             />
@@ -107,8 +155,11 @@
         </div>
       </div>
     </div>
-    <!-- CARD SECTION end -->
-    <!-- GALLERY SECTION start -->
+    <!-- card section end -->
+    <!--------------------->
+    <!-- GALLERY SECTION -->
+    <!--------------------->
+    <!-- gallery section start -->
     <!-- [LIGHTBOX CONTAINER] -->
     <div id="lb-back">
       <div id="lb-img"></div>
@@ -129,7 +180,7 @@
         </div>
         <div class="filters-content">
           <div class="row gallery-grid">
-            <!-- KARATE SECTION -->
+            <!-- KARATE SECTION start-->
             <div class="col-sm-4 all karate">
               <div class="grid-item">
                 <img
@@ -225,7 +276,8 @@
                 />
               </div>
             </div>
-            <!-- PRIZES SECTION -->
+            <!-- KARATE SECTION end-->
+            <!-- PRIZES SECTION start-->
             <div class="col-sm-4 all prizes">
               <div class="grid-item">
                 <img
@@ -314,7 +366,8 @@
                 />
               </div>
             </div>
-            <!-- GROUP SECTION -->
+            <!-- PRIZES SECTION end-->
+            <!-- GROUP SECTION start-->
             <div class="col-sm-4 all group">
               <div class="grid-item">
                 <img
@@ -389,7 +442,8 @@
                 />
               </div>
             </div>
-            <!-- SILAMBAM SECTION -->
+            <!-- GROUP SECTION end-->
+            <!-- SILAMBAM SECTION start-->
             <div class="col-sm-4 all silambam">
               <div class="grid-item">
                 <img
@@ -408,13 +462,12 @@
                 />
               </div>
             </div>
+            <!-- SILAMBAM SECTION end-->
           </div>
         </div>
       </div>
     </section>
     <!-- GALLERY SECTION end -->
-    <!-- image grid testing -->
-    <!-- ******************************************* -->
     <div class="empty" style="height: 150px; background-color: aqua;"></div>
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
