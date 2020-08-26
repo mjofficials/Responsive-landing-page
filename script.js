@@ -1,19 +1,19 @@
 // Function used for navigation bar
-$(".navTrigger").click(function () {
-  $(this).toggleClass("active");
-  console.log("Clicked menu");
-  $("#mainListDiv").toggleClass("show_list");
-  $("#mainListDiv").fadeIn();
-});
+// $(".navTrigger").click(function () {
+//   $(this).toggleClass("active");
+//   console.log("Clicked menu");
+//   $("#mainListDiv").toggleClass("show_list");
+//   $("#mainListDiv").fadeIn();
+// });
 // Function used to shrink nav bar removing paddings and adding black background
-$(window).scroll(function () {
-  if ($(document).scrollTop() > 50) {
-    $(".nav").addClass("affix");
-    console.log("OK");
-  } else {
-    $(".nav").removeClass("affix");
-  }
-});
+// $(window).scroll(function () {
+//   if ($(document).scrollTop() > 50) {
+//     $(".nav").addClass("affix");
+//     console.log("OK");
+//   } else {
+//     $(".nav").removeClass("affix");
+//   }
+// });
 // Function used for gallery section
 $('.filters ul li').click(function () {
   $('.filters ul li').removeClass('active');
@@ -57,3 +57,34 @@ window.addEventListener("load", function () {
     this.classList.remove("show");
   })
 });
+
+// 
+// Function used for navigation bar
+const toggle = document.querySelector(".toggle");
+const toggleBtn = document.querySelector(".toggle-btn");
+const menu = document.querySelector(".menu");
+const menuList = document.querySelector(".menu-list");
+const menuItems = document.querySelectorAll(".menu-item");
+
+let showMenu = false;
+
+toggle.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  if (!showMenu) {
+    toggleBtn.classList.add("open");
+    menu.classList.add("open");
+    menuList.classList.add("open");
+    menuItems.forEach(item => item.classList.add("open"));
+
+    showMenu = true;
+  } else {
+    toggleBtn.classList.remove("open");
+    menu.classList.remove("open");
+    menuList.classList.remove("open");
+    menuItems.forEach(item => item.classList.remove("open"));
+
+    showMenu = false;
+  }
+}
+
