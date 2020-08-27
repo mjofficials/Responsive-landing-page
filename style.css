@@ -53,8 +53,8 @@ body {
   position: absolute;
   top: 0.5rem;
   right: 0;
-  width: 1.6rem;
-  height: 2px;
+  width: 2.5rem;
+  height: 4px;
   background: #212121;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -63,8 +63,8 @@ body {
   content: "";
   position: absolute;
   top: -0.5rem;
-  width: 2rem;
-  height: 2px;
+  width: 3rem;
+  height: 4px;
   background: #212121;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -73,8 +73,8 @@ body {
   content: "";
   position: absolute;
   top: 0.5rem;
-  width: 1.2rem;
-  height: 2px;
+  width: 2rem;
+  height: 4px;
   background: #212121;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -89,7 +89,7 @@ body {
   transform: rotate(45deg) translate(5px, 8px);
 }
 .header .navbar .toggle-btn.open::after {
-  width: 2rem;
+  width: 3rem;
   -webkit-transform: rotate(-45deg) translate(3px, -6px);
   transform: rotate(-45deg) translate(0px, -2px);
 }
@@ -142,7 +142,7 @@ body {
 .header .navbar .menu-link {
   display: inline-block;
   padding: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: inherit;
   color: #212121;
@@ -784,7 +784,7 @@ article.row-content div {
     text-align: center;
   }
   .grid-item img {
-    max-width: 90px;
+    max-width: 100px;
     max-height: 175px;
   }
   .section.gallery .filters-content {
@@ -811,7 +811,7 @@ article.row-content div {
     text-align: center;
   }
   .grid-item img {
-    max-width: 85px;
+    max-width: 100px;
     max-height: 175px;
   }
   .section.gallery .filters-content {
