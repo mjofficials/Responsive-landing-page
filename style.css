@@ -151,7 +151,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .header .navbar .menu-link:hover {
-  color: ;
+  color: #ff5e14;
 }
 .header .navbar .menu .menu-list .menu-item:nth-child(1) {
   -webkit-transition-delay: 0.25s;
@@ -454,68 +454,50 @@ body {
 /* ************* */
 /* ABOUT SECTION */
 /* ************* */
-
-#about-box {
-  background: #fff;
-  padding: 40px 0px 80px;
-  font-family: "Open Sans", sans-serif;
+/* ********************************************** */
+.contain {
+  padding: 20px 40px 40px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-#about-box h1 {
+#about-container h2 {
+  font-size: 3.125em;
+  font-weight: 700;
   text-align: center;
-  font-size: 5.125em;
+  padding: 25px 0;
 }
-#about-box a {
-  text-decoration: none;
-  display: block;
-  font-weight: bold;
+.container__image {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  margin: 20px 30px 0 0;
 }
-#about-box a:hover {
-  color: #8e7bb2;
+.container__text {
+  display: inline-block;
+  width: 46%;
+  font-size: 15px;
+  text-align: justify;
 }
-
-@media only screen and (max-width: 375px) {
-  #about-box {
-    background: #fff;
-    padding: 15px;
-    font-family: "Open Sans", sans-serif;
+@media (max-width: 620px) {
+  .container__text {
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
   }
-  #about-box h1 {
-    text-align: center;
-    font-size: 2.125em;
-  }
-  #about-box p,
-  #about-box a {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-width: 375px) {
-  #about-box {
-    background: #fff;
+  #about-container h2 {
     padding: 20px;
   }
-  #about-box h1 {
+  .contain {
+    padding: 0 30px 20px;
+    align-content: center;
+    justify-content: space-evenly;
     text-align: center;
-    font-size: 2.125em;
-  }
-  #about-box p,
-  #about-box a {
-    font-size: 14px;
   }
 }
-@media only screen and (min-width: 768px) {
-  #about-box {
-    padding: 20px;
-  }
-  #about-box h1 {
-    text-align: center;
-    font-size: 3.125em;
-  }
-  #about-box p,
-  #about-box a {
-    font-size: 18px;
-  }
-}
-
+/* ********************************************** */
 /* ************* */
 /* CARDS SECTION */
 /* ************* */
@@ -657,6 +639,7 @@ body {
     max-width: 200px;
   }
 }
+/* ********************************************** */
 /* *************** */
 /* GALLERY SECTION */
 /* *************** */
@@ -856,22 +839,8 @@ body {
     margin-top: 25px;
   }
 }
-
-/* Reset height from having an defined to percentage
-and use spans to define size */
-.hero,
-.lrg,
-.med,
-.sm {
-  height: 100%;
-}
 /* **************************** */
-/* [IMAGE] */
-.zoomD {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
+
 /* [LIGHTBOX BACKGROUND] */
 #lb-back {
   position: fixed;
@@ -897,10 +866,6 @@ and use spans to define size */
   transform: translateY(-50%);
 }
 #lb-img img {
-  /* You might want to play around with 
-     width, height, max-width, max-height
-     to fit portrait / landscape pictures properly. */
-
   /* ALTERNATE EXAMPLE
   width: 100%;
   max-width: 1200px;
@@ -909,6 +874,13 @@ and use spans to define size */
   max-width: 100%;
   max-height: auto;
 }
+/* [LIGHTBOX IMAGE ZOOM ON CLICK] */
+.zoomD {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+/* ********************************************** */
 /* *************** */
 /* CONTACT SECTION */
 /* *************** */
@@ -916,6 +888,7 @@ and use spans to define size */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
 }
 #contact-box h1 {
   text-align: center;
@@ -931,13 +904,13 @@ and use spans to define size */
   max-width: 100%;
   height: auto;
 }
-
 .contacts-container .fas {
   font-size: 24px;
 }
 .mobile-details {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
 }
 .contacts-btn {
@@ -969,7 +942,6 @@ and use spans to define size */
 
 @media only screen and (min-width: 150px) {
   #contact-box {
-    background: ;
     padding: 10px;
   }
   #contact-box h1 {
@@ -977,7 +949,7 @@ and use spans to define size */
     font-size: 3.125em;
   }
   #contact-box h3 {
-    font-size: 1.825em;
+    font-size: 2em;
   }
   .mobile-details,
   .fas {
@@ -994,13 +966,11 @@ and use spans to define size */
   #table {
     display: table;
     width: 100%;
-    padding: 10px 0;
     font-size: 13px;
   }
 }
 @media only screen and (min-width: 375px) {
   #contact-box {
-    background: ;
     padding: 10px;
   }
   #contact-box h1 {
@@ -1008,7 +978,7 @@ and use spans to define size */
     font-size: 3.125em;
   }
   #contact-box h3 {
-    font-size: 1.825em;
+    font-size: 2em;
   }
   .mobile-details,
   .fas {
@@ -1022,13 +992,11 @@ and use spans to define size */
   #table {
     display: table;
     width: 100%;
-    padding: 10px 0;
     font-size: 13px;
   }
 }
 @media only screen and (min-width: 425px) {
   #contact-box {
-    background: ;
     padding: 15px;
   }
   #contact-box h1 {
@@ -1054,13 +1022,9 @@ and use spans to define size */
     align-content: space-between;
     margin-bottom: 20px;
   }
-  /* .worikng-hours {
-    padding: 10px;
-  } */
   #table {
     display: table;
     width: 100%;
-    padding: 10px 0;
     font-size: 15px;
   }
 }
@@ -1097,11 +1061,14 @@ and use spans to define size */
   #table {
     display: table;
     width: 100%;
-    padding: 10px 0;
     font-size: 15px;
   }
 }
 /* TABLE FOR BUSINESS HOURS SECTION */
+#table {
+  margin: 0;
+  padding: 0 0 20px 0;
+}
 .tr {
   display: table-row;
 }
@@ -1114,9 +1081,10 @@ and use spans to define size */
 /* GOOGLE-MAPS */
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 25.25%;
   position: relative;
   height: 0;
+  border: 2px solid #000;
 }
 .map-responsive iframe {
   left: 0;
@@ -1125,3 +1093,145 @@ and use spans to define size */
   width: 100%;
   position: absolute;
 }
+/* ********************************************** */
+/* *************** */
+/* FOOTER SECTION */
+/* ************* */
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-content {
+  position: relative;
+  z-index: 1;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+  text-align: center;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg {
+  background: #3b5998;
+}
+.twitter-bg {
+  background: #55acee;
+}
+.google-bg {
+  background: #dd4b39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline;
+  padding: 10px;
+  font-size: 15px;
+  /* float: left; */
+  /* width: 50%; */
+  /* margin-bottom: 12px; */
+}
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+  text-align: center;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a {
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+/* ********************************************** */
