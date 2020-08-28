@@ -58,6 +58,7 @@
         </div>
       </nav>
     </header>
+    <!-- banner-image-section -->
     <section class="home">
       <div class="home-slider">
         <div class="slide1"></div>
@@ -65,10 +66,16 @@
         <div class="slide3"></div>
       </div>
     </section>
-    <div id="about-box">
-      <h1>About us</h1>
-      <article>
-        <div>
+    <!------------------>
+    <!-- ABOUT SECTION -->
+    <!------------------>
+    <!-- about-section-start -->
+    <section id="about-container">
+      <h2>About us</h2>
+      <div class="contain">
+        <img src="https://eoligive.sirv.com/Banner/aram-1-scaled.png" alt="" />
+
+        <div class="container__text">
           <p>
             Aram Kalaiyagam was founded in the year 2019. It was founded with a
             vision to create excellence in extracurricular activities. Today we
@@ -77,18 +84,10 @@
             Western Dance, Classical Dance, Karate, Yoga, Archery, Silambam etc.
             All our programs are conducted by leading experts & stalwarts.
           </p>
-          <a href="#">Link to read more</a>
         </div>
-        <!-- <div>
-          <img
-            src="https://eoligive.sirv.com/Banner/aram%203-banner.jpg?w=1200"
-            width="1200"
-            height="856"
-            alt=""
-          />
-        </div> -->
-      </article>
-    </div>
+      </div>
+    </section>
+    <!-- about-section-end-->
     <!------------------>
     <!-- CARD SECTION -->
     <!------------------>
@@ -471,30 +470,21 @@
       <div id="contact-box">
         <h1>Contact Us</h1>
         <!-- google-maps -->
-        <div class="map-responsive">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d977.9191303073443!2d77.70358786694625!3d11.35832125211156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba968d48d576df5%3A0xb003bdfe785e03e3!2sReliance%20Petrol%20Bunk!5e0!3m2!1sen!2sin!4v1598613416456!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
         <div class="contacts-container">
           <!-- mobile-details -->
           <div class="mobile-details">
-            <h3>Contact</h3>
-            <i class="fas fa-phone-square-alt fa-10px"></i>
+            <h3>
+              <span> <i class="fas fa-phone-square-alt fa-10px"></i> </span>
+              Contact
+            </h3>
             <p>+9791-292-331</p>
             <a href="tel:+9791292331" class="contacts-btn">Call now</a>
           </div>
           <!-- address-details -->
           <div class="address-details">
-            <h3>Address</h3>
-            <i class="fas fa-address-card"></i>
+            <h3>
+              <span> <i class="fas fa-address-card"></i> </span> Address
+            </h3>
             <p>
               Kanagu Complex,<br />Soolai,<br />Erode - 638004,<br />(near
               Reliance petrol bunk).,
@@ -502,8 +492,9 @@
           </div>
           <!-- working-hours -->
           <div class="working-hours">
-            <h3>Business Hours</h3>
-            <i class="fas fa-clock"></i>
+            <h3>
+              <span> <i class="fas fa-clock"></i> </span> Business Hours
+            </h3>
             <div id="table">
               <div class="tr">
                 <div class="td day">Mon:</div>
@@ -548,7 +539,122 @@
             </div>
           </div>
         </div>
+        <div class="map-responsive">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d977.9191303073443!2d77.70358786694625!3d11.35832125211156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba968d48d576df5%3A0xb003bdfe785e03e3!2sReliance%20Petrol%20Bunk!5e0!3m2!1sen!2sin!4v1598613416456!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
       </div>
+    </section>
+    <!-- FOOTER-SECTION-START -->
+    <section id="footer-section">
+      <footer class="footer-section">
+        <div class="container">
+          <div class="footer-content">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="index.html"
+                      ><img
+                        src="https://eoligive.sirv.com/Banner/aram-1-scaled.png?w=200"
+                        width="200"
+                        height="143"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="footer-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                      sed do eiusmod tempor incididuntut consec tetur
+                      adipisicing elit,Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="footer-social-icon">
+                    <span>Follow us</span>
+                    <a href="#"
+                      ><i class="fab fa-facebook-f facebook-bg"></i
+                    ></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"
+                      ><i class="fab fa-google-plus-g google-bg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Useful Links</h3>
+                  </div>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Expert Team</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Subscribe</h3>
+                  </div>
+                  <div class="footer-text mb-25">
+                    <p>
+                      Don’t miss to subscribe to our new feeds, kindly fill the
+                      form below.
+                    </p>
+                  </div>
+                  <div class="subscribe-form">
+                    <form action="#">
+                      <input type="text" placeholder="Email Address" />
+                      <button><i class="fab fa-telegram-plane"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>
+                    Copyright &copy; 2018, All Right Reserved
+                    <a href="">Aram-Kalaiyagam</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
