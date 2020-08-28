@@ -151,7 +151,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .header .navbar .menu-link:hover {
-  color: cyan;
+  color: ;
 }
 .header .navbar .menu .menu-list .menu-item:nth-child(1) {
   -webkit-transition-delay: 0.25s;
@@ -465,7 +465,6 @@ body {
   font-size: 5.125em;
 }
 #about-box a {
-  color: #70bcb8;
   text-decoration: none;
   display: block;
   font-weight: bold;
@@ -910,7 +909,219 @@ and use spans to define size */
   max-width: 100%;
   max-height: auto;
 }
-#map {
-  height: 400px; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
+/* *************** */
+/* CONTACT SECTION */
+/* *************** */
+#contact-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#contact-box h1 {
+  text-align: center;
+  font-size: 2.125em;
+  padding: 20px 0;
+}
+#contact-box h3 {
+  font-size: 1.125em;
+}
+#contact-box p,
+#contact-box a {
+  font-size: 17px;
+  max-width: 100%;
+  height: auto;
+}
+
+.contacts-container .fas {
+  font-size: 24px;
+}
+.mobile-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.contacts-btn {
+  width: 120px;
+  color: #000;
+  font-size: 75px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+  background-color: #fff;
+}
+.contacts-btn:hover {
+  box-shadow: 0 0 0 1px white, 0 0 0 2px #4e524c, 0 0 0 5px #50554c,
+    0 0 0 6.5px white, 0 0 0 7px #4e524c;
+  border-radius: 100px;
+  background: none;
+}
+.address-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.worikng-hours {
+  padding: 10px;
+}
+/* media-queries */
+
+@media only screen and (min-width: 150px) {
+  #contact-box {
+    background: ;
+    padding: 10px;
+  }
+  #contact-box h1 {
+    text-align: center;
+    font-size: 3.125em;
+  }
+  #contact-box h3 {
+    font-size: 1.825em;
+  }
+  .mobile-details,
+  .fas {
+    padding: 10px 0;
+  }
+  #contact-box p,
+  #contact-box a {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .contacts-container p {
+    padding: 0 20px;
+  }
+  #table {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  #contact-box {
+    background: ;
+    padding: 10px;
+  }
+  #contact-box h1 {
+    text-align: center;
+    font-size: 3.125em;
+  }
+  #contact-box h3 {
+    font-size: 1.825em;
+  }
+  .mobile-details,
+  .fas {
+    padding: 10px 0;
+  }
+  #contact-box p,
+  #contact-box a {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  #table {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  #contact-box {
+    background: ;
+    padding: 15px;
+  }
+  #contact-box h1 {
+    text-align: center;
+    font-size: 3.125em;
+  }
+  #contact-box h3 {
+    font-size: 2.825em;
+    padding-bottom: 10px;
+  }
+  #contact-box p,
+  #contact-box a {
+    font-size: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  .contacts-container p {
+    padding: 10px 0;
+  }
+  .mobile-details {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-bottom: 20px;
+  }
+  /* .worikng-hours {
+    padding: 10px;
+  } */
+  #table {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #contact-box {
+    background: #fff;
+    padding: 15px;
+  }
+  #contact-box h1 {
+    text-align: center;
+    font-size: 3.125em;
+  }
+  #contact-box h3 {
+    font-size: 2.825em;
+    padding-bottom: 10px;
+  }
+  #contact-box p,
+  #contact-box a {
+    font-size: 15px;
+    max-width: 100%;
+    height: auto;
+  }
+  .contacts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .contacts-container p {
+    padding: 10px 0;
+  }
+  #table {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+}
+/* TABLE FOR BUSINESS HOURS SECTION */
+.tr {
+  display: table-row;
+}
+.td {
+  display: table-cell;
+}
+.day {
+  font-weight: 600;
+}
+/* GOOGLE-MAPS */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
