@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
-@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
   font-size: 10px;
   height: 100%;
   line-height: 1.5;
-
   -webkit-tap-highlight-color: transparent;
   /* overflow-x: hidden; */
 }
@@ -230,7 +229,7 @@ body {
 /* ************ */
 .home-slider {
   max-width: 100%;
-  height: 400px;
+  height: 500px;
   margin: 0;
   position: relative;
   top: 0;
@@ -267,6 +266,8 @@ body {
   background: url(https://eoligive.sirv.com/Banner/karate-pose-resized.jpg)
     no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   animation: fade 16s infinite;
   -webkit-animation: fade 16s infinite;
 }
@@ -274,6 +275,8 @@ body {
   background: url(https://eoligive.sirv.com/Banner/yoga-pose.jpg) no-repeat
     center;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   animation: fade2 16s infinite;
   -webkit-animation: fade2 16s infinite;
 }
@@ -281,6 +284,8 @@ body {
   background: url(https://eoligive.sirv.com/Banner/gym-resized-re.jpg) no-repeat
     center;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   animation: fade3 16s infinite;
   -webkit-animation: fade3 16s infinite;
 }
@@ -456,36 +461,52 @@ body {
 /* ************* */
 /* ********************************************** */
 .contain {
-  padding: 20px 40px 40px;
+  padding: 40px;
   max-width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+#about-container {
+  width: 100%;
+  height: 575px;
+}
 #about-container h2 {
   font-size: 3.125em;
   font-weight: 700;
+  font-family: "Oswald", sans-serif;
   text-align: center;
-  padding: 25px 0;
+  padding: 2em 0;
+  color: #5e5e5e;
 }
-.container__image {
+.container__image img {
   display: inline-block;
   vertical-align: top;
-  width: 46%;
+  width: 100%;
   margin: 20px 30px 0 0;
+  /* background-image: linear-gradient(to right, #e05343, #d34166); */
 }
 .container__text {
   display: inline-block;
   width: 46%;
-  font-size: 15px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
   text-align: justify;
+  line-height: 30px;
+  background-image: linear-gradient(to right, #e05343, #d34166);
+  color: white;
+  padding: 10px;
 }
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   .container__text {
     width: 100%;
     font-size: 20px;
     text-align: justify;
+  }
+  #about-container {
+    width: 100%;
+    height: auto;
   }
   #about-container h2 {
     padding: 20px;
@@ -513,6 +534,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 0;
+  padding-right: 15px;
 }
 .cards-grid-item {
   min-width: 250px;
@@ -526,19 +549,35 @@ body {
   padding: 2rem 0;
   background: #fff;
   color: #000000;
-  font-family: "Roboto", sans-serif;
   text-align: center;
+}
+div.background {
+  background-image: url(illustration-bg-1-lg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-color: #1da1f2; */
+  /* opacity: 0.5; */
+}
+div.transbox {
 }
 .wrapper h1 {
   font-size: 4.125em;
   line-height: 1.5;
+  font-family: "Lexend Peta", sans-serif;
+  margin: 45px 0;
+  color: #fff;
 }
 .wrapper p {
   font-size: 2.5em;
-  font-family: "Nunito", sans-serif;
   line-height: 1.5;
-  margin-bottom: 1rem;
-  color: #000000;
+  margin: 6rem 0;
+  font-family: "Krona One", sans-serif;
+  text-transform: uppercase;
+  color: crimson;
+}
+.cards-grid-item {
+  min-width: 15%;
+  max-width: 100%;
 }
 .cards-grid-item figure {
   padding: 0;
@@ -553,8 +592,9 @@ body {
   display: block;
   padding: 0.625rem 0.5rem;
   background: #ffffff;
-  font-family: "Nunito", sans-serif;
+  font-family: ;
   font-size: 1.5em;
+  color: crimson;
 }
 /* ************************* */
 /* CARDS MEDIA-QUERY SECTION */
@@ -569,7 +609,6 @@ body {
   }
   .wrapper p {
     font-size: 1.5em;
-    font-family: "Nunito", sans-serif;
     line-height: 2.5;
     margin-bottom: 1rem;
     color: #000000;
@@ -589,14 +628,13 @@ body {
   }
   .wrapper p {
     font-size: 1.5em;
-    font-family: "Nunito", sans-serif;
     line-height: 2.5;
     margin-bottom: 1rem;
     color: #000000;
   }
   .cards-grid-item {
-    min-width: 150px;
-    max-width: 178px;
+    min-width: 100%;
+    max-width: 100%;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 425px) {
@@ -609,17 +647,16 @@ body {
   }
   .wrapper p {
     font-size: 1.5em;
-    font-family: "Nunito", sans-serif;
     line-height: 2.5;
     margin-bottom: 1rem;
     color: #000000;
   }
   .cards-grid-item {
-    min-width: 150px;
-    max-width: 178px;
+    min-width: 100%;
+    max-width: 100%;
   }
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 425px) {
   .wrapper {
     padding: 2rem 2rem 0 0;
   }
@@ -629,14 +666,13 @@ body {
   }
   .wrapper p {
     font-size: 1.5em;
-    font-family: "Nunito", sans-serif;
     line-height: 2.5;
     margin-bottom: 1rem;
     color: #000000;
   }
   .cards-grid-item {
-    min-width: 150px;
-    max-width: 200px;
+    min-width: 49.33%;
+    max-width: 25%;
   }
 }
 /* ********************************************** */
@@ -904,6 +940,8 @@ body {
   max-width: 100%;
   height: auto;
 }
+.contacts-container {
+}
 .contacts-container .fas {
   font-size: 24px;
 }
@@ -960,6 +998,9 @@ body {
     font-size: 20px;
     padding: 10px 0;
   }
+  .contacts-container {
+    padding: 0;
+  }
   .contacts-container p {
     padding: 0 20px;
   }
@@ -989,6 +1030,9 @@ body {
     font-size: 20px;
     padding: 10px 0;
   }
+  .contacts-container {
+    padding: 0;
+  }
   #table {
     display: table;
     width: 100%;
@@ -1012,6 +1056,9 @@ body {
     font-size: 20px;
     max-width: 100%;
     height: auto;
+  }
+  .contacts-container {
+    padding: 0;
   }
   .contacts-container p {
     padding: 10px 0;
@@ -1054,6 +1101,7 @@ body {
     align-items: baseline;
     justify-content: space-around;
     text-align: center;
+    padding: 0 0 0 175px;
   }
   .contacts-container p {
     padding: 10px 0;
