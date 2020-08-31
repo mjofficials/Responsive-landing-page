@@ -93,5 +93,5 @@ window.addEventListener('scroll', function () {
     let offset = window.pageYOffset;
     // console.log('Offset: ' + offset);
     // console.log('Offset * 0.7' + offset)
-    parallax.style.backgroundPositionY = offset * 0.9 + "px";
+    parallax.style.backgroundPositionY = offset * 0.4 + "px";
 })
