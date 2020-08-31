@@ -10,7 +10,7 @@ body {
   font-size: 10px;
   height: 100%;
   line-height: 1.5;
-  width: auto;
+  width: 100%;
   -webkit-tap-highlight-color: transparent;
   /* overflow-x: hidden; */
 }
@@ -23,7 +23,6 @@ body {
 
 .container {
   max-width: 75rem;
-  width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
 }
@@ -570,7 +569,7 @@ body {
   line-height: 1.5;
   font-family: "Lexend Peta", sans-serif;
   margin: 45px 0;
-  color: red;
+  color: #fff;
 }
 .wrapper p {
   font-size: 2.5em;
@@ -578,7 +577,7 @@ body {
   margin: 6rem 0;
   font-family: "Krona One", sans-serif;
   text-transform: uppercase;
-  color: red;
+  color: #fff;
 }
 .cards-grid-item {
   min-width: 15%;
@@ -595,12 +594,55 @@ body {
 }
 .cards-grid-item figcaption {
   display: block;
-  padding: 0.625rem 0.5rem;
-  background: #ffffff;
-  font-family: ;
-  font-size: 1.5em;
-  color: crimson;
+  /* padding: 0.625rem 0.5rem;
+  background: #ffffff; */
+  font-size: 2em;
+  line-height: 1.5;
+  margin: 6rem 0;
+  font-family: "Krona One", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
 }
+/* ***************************************** */
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  /* height: 200px;
+  width: 257px; */
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(250, 106, 207, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  transition: 0.5s;
+  transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
+/* ***************************************** */
 /* ************************* */
 /* CARDS MEDIA-QUERY SECTION */
 /* ************************* */
@@ -1153,6 +1195,7 @@ body {
 .footer-section {
   background: #151414;
   position: relative;
+  width: 100%;
 }
 .footer-content {
   position: relative;
@@ -1225,7 +1268,7 @@ body {
   background: #ff5e14;
 }
 .footer-widget ul li {
-  display: inline;
+  display: flex;
   padding: 10px;
   font-size: 15px;
   /* float: left; */
@@ -1244,7 +1287,7 @@ body {
   overflow: hidden;
 }
 .subscribe-form input {
-  width: 100%;
+  max-width: 100%;
   padding: 14px 28px;
   background: #2e2e2e;
   border: 1px solid #2e2e2e;
@@ -1252,7 +1295,7 @@ body {
 }
 .subscribe-form button {
   position: absolute;
-  right: 0;
+  right: 24px;
   background: #ff5e14;
   padding: 13px 20px;
   border: 1px solid #ff5e14;
@@ -1277,7 +1320,7 @@ body {
   color: #ff5e14;
 }
 .footer-menu li {
-  display: inline-block;
+  display: flex;
   margin-left: 20px;
 }
 .footer-menu li:hover a {
