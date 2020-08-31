@@ -10,6 +10,7 @@ body {
   font-size: 10px;
   height: 100%;
   line-height: 1.5;
+  width: auto;
   -webkit-tap-highlight-color: transparent;
   /* overflow-x: hidden; */
 }
@@ -42,7 +43,7 @@ body {
   width: 1rem;
   height: 1.4rem;
   top: 2.4rem;
-  right: 2rem;
+  right: 4rem;
   z-index: 2;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
@@ -51,7 +52,7 @@ body {
 .header .navbar .toggle-btn {
   position: absolute;
   top: 0.5rem;
-  right: 0;
+  right: -6px;
   width: 2.5rem;
   height: 4px;
   background: #212121;
@@ -118,7 +119,7 @@ body {
   list-style: none;
   list-style-type: none;
   padding-right: 1rem;
-  background: #ffffff;
+  background: #fff;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   -webkit-transition: all 0.3s ease-in-out;
@@ -144,7 +145,7 @@ body {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: inherit;
-  color: #212121;
+  color: #000;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -173,7 +174,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: inherit;
-  color: #212121;
+  color: #000;
   text-transform: uppercase;
 }
 .buttons-container {
@@ -246,13 +247,13 @@ body {
 @media only screen and (max-width: 425px) and (min-width: 375px) {
   .home-slider {
     max-width: 100%;
-    height: 200px;
+    height: 350px;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 425px) {
   .home-slider {
     max-width: 100%;
-    max-height: 350px;
+    height: 350px;
   }
 }
 .slide1,
@@ -477,7 +478,7 @@ body {
   font-weight: 700;
   font-family: "Oswald", sans-serif;
   text-align: center;
-  padding: 2em 0;
+  padding: 1em 0;
   color: #5e5e5e;
 }
 .container__image img {
@@ -493,10 +494,13 @@ body {
   font-size: 18px;
   font-family: "Lato", sans-serif;
   text-align: justify;
-  line-height: 30px;
+  line-height: 40px;
   background-image: linear-gradient(to right, #e05343, #d34166);
   color: white;
   padding: 10px;
+  -webkit-box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46);
 }
 @media (max-width: 768px) {
   .container__text {
@@ -519,16 +523,10 @@ body {
   }
 }
 /* ********************************************** */
+
 /* ************* */
 /* CARDS SECTION */
 /* ************* */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 .cards-grid {
   display: flex;
   flex-direction: row;
@@ -546,26 +544,33 @@ body {
   margin-bottom: 1rem;
 }
 .wrapper {
+  position: relative;
   padding: 2rem 0;
   background: #fff;
   color: #000000;
   text-align: center;
+  background-image: url("bg-dribble.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-div.background {
-  background-image: url(https://eoligive.sirv.com/illustration/illustration-bg-1-lg.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.wrapper-content {
+}
+.background {
+  /* background-image: linear-gradient(
+    to right,
+    rgba(224, 83, 66.5),
+    rgba(211, 65, 111, 0.8)
+  ); */
   /* background-color: #1da1f2; */
   /* opacity: 0.5; */
-}
-div.transbox {
 }
 .wrapper h1 {
   font-size: 4.125em;
   line-height: 1.5;
   font-family: "Lexend Peta", sans-serif;
   margin: 45px 0;
-  color: #fff;
+  color: red;
 }
 .wrapper p {
   font-size: 2.5em;
@@ -573,7 +578,7 @@ div.transbox {
   margin: 6rem 0;
   font-family: "Krona One", sans-serif;
   text-transform: uppercase;
-  color: crimson;
+  color: red;
 }
 .cards-grid-item {
   min-width: 15%;
@@ -601,7 +606,7 @@ div.transbox {
 /* ************************* */
 @media only screen and (max-width: 320px) {
   .wrapper {
-    padding: 2rem 2rem 0 0;
+    padding: 2rem 0 0 0;
   }
   .wrapper h1 {
     font-size: 2.125em;
@@ -611,7 +616,7 @@ div.transbox {
     font-size: 1.5em;
     line-height: 2.5;
     margin-bottom: 1rem;
-    color: #000000;
+    color: #fff;
   }
   .cards-grid-item {
     min-width: 150px;
@@ -620,7 +625,7 @@ div.transbox {
 }
 @media only screen and (max-width: 375px) {
   .wrapper {
-    padding: 2rem 2rem 0 0;
+    padding: 2rem 0 0 0;
   }
   .wrapper h1 {
     font-size: 2.125em;
@@ -630,7 +635,7 @@ div.transbox {
     font-size: 1.5em;
     line-height: 2.5;
     margin-bottom: 1rem;
-    color: #000000;
+    color: #fff;
   }
   .cards-grid-item {
     min-width: 100%;
@@ -639,7 +644,7 @@ div.transbox {
 }
 @media only screen and (min-width: 375px) and (max-width: 425px) {
   .wrapper {
-    padding: 2rem 2rem 0 0;
+    padding: 2rem 0 0 0;
   }
   .wrapper h1 {
     font-size: 2.125em;
@@ -649,7 +654,7 @@ div.transbox {
     font-size: 1.5em;
     line-height: 2.5;
     margin-bottom: 1rem;
-    color: #000000;
+    color: #fff;
   }
   .cards-grid-item {
     min-width: 100%;
@@ -658,7 +663,7 @@ div.transbox {
 }
 @media only screen and (max-width: 768px) and (min-width: 425px) {
   .wrapper {
-    padding: 2rem 2rem 0 0;
+    padding: 2rem 0 0 0;
   }
   .wrapper h1 {
     font-size: 2.125em;
@@ -668,7 +673,7 @@ div.transbox {
     font-size: 1.5em;
     line-height: 2.5;
     margin-bottom: 1rem;
-    color: #000000;
+    color: #fff;
   }
   .cards-grid-item {
     min-width: 49.33%;
