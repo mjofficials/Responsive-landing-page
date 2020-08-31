@@ -16,46 +16,46 @@
 // });
 // Function used for gallery section
 $('.filters ul li').click(function () {
-  $('.filters ul li').removeClass('active');
-  $(this).addClass('active');
+    $('.filters ul li').removeClass('active');
+    $(this).addClass('active');
 
-  var data = $(this).attr('data-filter');
-  $grid.isotope({
-    filter: data
-  })
+    var data = $(this).attr('data-filter');
+    $grid.isotope({
+        filter: data
+    })
 });
 var $grid = $(".gallery-grid").isotope({
-  itemSelector: ".all",
-  percentPosition: true,
-  masonry: {
-    columnWidth: ".all"
-  }
+    itemSelector: ".all",
+    percentPosition: true,
+    masonry: {
+        columnWidth: ".all"
+    }
 })
 // Function used to show the image in the lightbox
 var zoomImg = function () {
-  // Create evil image clone
-  var clone = this.cloneNode();
-  clone.classList.remove("zoomD");
-  // Put evil clone into lightbox
-  var lb = document.getElementById("lb-img");
-  lb.innerHTML = "";
-  lb.appendChild(clone);
-  // Show lightbox
-  lb = document.getElementById("lb-back");
-  lb.classList.add("show");
+    // Create evil image clone
+    var clone = this.cloneNode();
+    clone.classList.remove("zoomD");
+    // Put evil clone into lightbox
+    var lb = document.getElementById("lb-img");
+    lb.innerHTML = "";
+    lb.appendChild(clone);
+    // Show lightbox
+    lb = document.getElementById("lb-back");
+    lb.classList.add("show");
 };
 window.addEventListener("load", function () {
-  // Attach on click events to all .zoomD images
-  var images = document.getElementsByClassName("zoomD");
-  if (images.length > 0) {
-    for (var img of images) {
-      img.addEventListener("click", zoomImg);
+    // Attach on click events to all .zoomD images
+    var images = document.getElementsByClassName("zoomD");
+    if (images.length > 0) {
+        for (var img of images) {
+            img.addEventListener("click", zoomImg);
+        }
     }
-  }
-  // Click event to hide the lightbox
-  document.getElementById("lb-back").addEventListener("click", function () {
-    this.classList.remove("show");
-  })
+    // Click event to hide the lightbox
+    document.getElementById("lb-back").addEventListener("click", function () {
+        this.classList.remove("show");
+    })
 });
 
 // 
@@ -71,20 +71,27 @@ let showMenu = false;
 toggle.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
-  if (!showMenu) {
-    toggleBtn.classList.add("open");
-    menu.classList.add("open");
-    menuList.classList.add("open");
-    menuItems.forEach(item => item.classList.add("open"));
+    if (!showMenu) {
+        toggleBtn.classList.add("open");
+        menu.classList.add("open");
+        menuList.classList.add("open");
+        menuItems.forEach(item => item.classList.add("open"));
 
-    showMenu = true;
-  } else {
-    toggleBtn.classList.remove("open");
-    menu.classList.remove("open");
-    menuList.classList.remove("open");
-    menuItems.forEach(item => item.classList.remove("open"));
+        showMenu = true;
+    } else {
+        toggleBtn.classList.remove("open");
+        menu.classList.remove("open");
+        menuList.classList.remove("open");
+        menuItems.forEach(item => item.classList.remove("open"));
 
-    showMenu = false;
-  }
+        showMenu = false;
+    }
 }
-
+// Function used PARALLAX EFFECTS
+const parallax = document.getElementById("parallax");
+window.addEventListener('scroll', function () {
+    let offset = window.pageYOffset;
+    // console.log('Offset: ' + offset);
+    // console.log('Offset * 0.7' + offset)
+    parallax.style.backgroundPositionY = offset * 0.9 + "px";
+})
