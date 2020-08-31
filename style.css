@@ -43,7 +43,7 @@ body {
   width: 1rem;
   height: 1.4rem;
   top: 2.4rem;
-  right: 4rem;
+  right: 8rem;
   z-index: 2;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
@@ -549,7 +549,7 @@ body {
   background: #fff;
   color: #000000;
   text-align: center;
-  background-image: url("bg-dribble.jpg");
+  background-image: url("https://eoligive.sirv.com/Banner/bg-dribble.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
