@@ -478,12 +478,18 @@ body {
   padding: 1em 0;
   color: #2f1728;
 }
+#about-container h2:after {
+  content: "";
+  display: block;
+  width: 5%;
+  border-bottom: 1px solid #2f1728;
+  margin: 8px auto;
+}
 .container__image img {
   display: inline-block;
   vertical-align: top;
   width: 100%;
   margin: 20px 30px 0 0;
-  /* background-image: linear-gradient(to right, #e05343, #d34166); */
 }
 .container__text {
   display: inline-block;
@@ -492,14 +498,58 @@ body {
   font-family: "Lora", serif;
   text-align: justify;
   line-height: 40px;
-  /* background-image: linear-gradient(to right, #e05343, #d34166); */
   color: #2f1728;
   padding: 10px;
-  /* -webkit-box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46);
-  -moz-box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46);
-  box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46); */
   border: 1px solid #2f1728;
   border-radius: 20px;
+}
+@media only screen and (max-width: 320px) {
+  #about-container h2 {
+    font-size: 3.125em;
+  }
+  #about-container h2:after {
+    content: "";
+    display: block;
+    width: 35%;
+    border-bottom: 1px solid #2f1728;
+    margin: 8px auto;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #about-container h2 {
+    font-size: 3.125em;
+  }
+  #about-container h2:after {
+    content: "";
+    display: block;
+    width: 38%;
+    border-bottom: 1px solid #2f1728;
+    margin: 8px auto;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  #about-container h2 {
+    font-size: 3.125em;
+  }
+  #about-container h2:after {
+    content: "";
+    display: block;
+    width: 40%;
+    border-bottom: 1px solid #2f1728;
+    margin: 8px auto;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  #about-container h2 {
+    font-size: 3.125em;
+  }
+  #about-container h2:after {
+    content: "";
+    display: block;
+    width: 20%;
+    border-bottom: 1px solid #2f1728;
+    margin: 8px auto;
+  }
 }
 @media (max-width: 768px) {
   .container__text {
@@ -549,7 +599,7 @@ body {
   color: #000000;
   text-align: center;
   /* background-image: url("https://eoligive.sirv.com/Banner/bg-dribble.jpg"); */
-  background-image: url("inscription-bright.jpg");
+  background-image: url("https://eoligive.sirv.com/Banner/inscription-bright.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -558,7 +608,7 @@ body {
   font-size: 6.125em;
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
-  margin: 45px 0;
+  margin: 50px 0;
   color: #2f1728;
 }
 .wrapper p {
@@ -1257,45 +1307,6 @@ body {
 .footer-distributed .footer-center {
   width: 35%;
 }
-
-.footer-distributed .footer-center i {
-  background-color: #33383b;
-  color: #fff5d7;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer-distributed .footer-center p {
-  display: inline-block;
-  color: #fff5d7;
-  font-weight: 400;
-  vertical-align: middle;
-  margin: 0;
-}
-
-.footer-distributed .footer-center p span {
-  display: block;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 2;
-}
-
-.footer-distributed .footer-center p a {
-  color: lightseagreen;
-  text-decoration: none;
-}
-
 .footer-distributed .footer-links a:before {
   content: "|";
   font-weight: 300;
