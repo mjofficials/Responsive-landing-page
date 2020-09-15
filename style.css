@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Montserrat&display=swap");
 html,
 body {
   margin: 0;
@@ -32,7 +29,7 @@ body {
   position: fixed;
   z-index: 2;
   width: 100%;
-  background-color: #fff5d7;
+  background-color: #ffd865;
   padding: 1rem;
 }
 .header h1 {
@@ -474,9 +471,9 @@ body {
   height: 575px;
 }
 #about-container h2 {
-  font-size: 3.125em;
-  font-weight: 700;
-  font-family: "Oswald", sans-serif;
+  font-size: 4.125em;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   padding: 1em 0;
   color: #2f1728;
@@ -492,15 +489,17 @@ body {
   display: inline-block;
   width: 46%;
   font-size: 18px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   text-align: justify;
   line-height: 40px;
-  background-image: linear-gradient(to right, #e05343, #d34166);
-  color: white;
+  /* background-image: linear-gradient(to right, #e05343, #d34166); */
+  color: #2f1728;
   padding: 10px;
-  -webkit-box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46);
+  /* -webkit-box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46);
   -moz-box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46);
-  box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 14px 37px -6px rgba(0, 0, 0, 0.46); */
+  border: 1px solid #2f1728;
+  border-radius: 20px;
 }
 @media (max-width: 768px) {
   .container__text {
@@ -549,36 +548,26 @@ body {
   background: #fff;
   color: #000000;
   text-align: center;
-  background-image: url("https://eoligive.sirv.com/Banner/bg-dribble.jpg");
+  /* background-image: url("https://eoligive.sirv.com/Banner/bg-dribble.jpg"); */
+  background-image: url("inscription-bright.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-.wrapper-content {
-}
-.background {
-  /* background-image: linear-gradient(
-    to right,
-    rgba(224, 83, 66.5),
-    rgba(211, 65, 111, 0.8)
-  ); */
-  /* background-color: #1da1f2; */
-  /* opacity: 0.5; */
-}
 .wrapper h1 {
-  font-size: 4.125em;
+  font-size: 6.125em;
   line-height: 1.5;
-  font-family: "Lexend Peta", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 45px 0;
-  color: #fff;
+  color: #2f1728;
 }
 .wrapper p {
-  font-size: 2.5em;
+  font-size: 3.5em;
   line-height: 1.5;
   margin: 6rem 0;
-  font-family: "Krona One", sans-serif;
+  font-family: "Lora", serif;
   text-transform: uppercase;
-  color: #fff;
+  color: #2f1728;
 }
 .cards-grid-item {
   min-width: 15%;
@@ -618,7 +607,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(250, 106, 207, 0.6);
+  background: rgba(227, 66, 91, 0.7);
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -659,7 +648,7 @@ body {
     font-size: 1.5em;
     line-height: 2.5;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #2f1728;
   }
   .cards-grid-item {
     min-width: 150px;
@@ -678,7 +667,7 @@ body {
     font-size: 1.5em;
     line-height: 2.5;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #2f1728;
   }
   .cards-grid-item {
     min-width: 100%;
@@ -697,7 +686,7 @@ body {
     font-size: 1.5em;
     line-height: 2.5;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #2f1728;
   }
   .cards-grid-item {
     min-width: 100%;
@@ -716,7 +705,7 @@ body {
     font-size: 1.5em;
     line-height: 2.5;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #2f1728;
   }
   .cards-grid-item {
     min-width: 49.33%;
@@ -742,9 +731,10 @@ body {
 }
 .section .top-side {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 .section .top-side .title {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 35px;
   display: inline-block;
 }
@@ -757,6 +747,7 @@ body {
 }
 .section.gallery .filters {
   text-align: center;
+  font-family: "Lora", serif;
 }
 .section.gallery .filters ul {
   padding: 0;
@@ -819,7 +810,7 @@ body {
     font-size: 1.3rem;
   }
   .section .top-side .title {
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2.125em;
     display: inline-block;
   }
@@ -846,7 +837,7 @@ body {
     font-size: 1.3rem;
   }
   .section .top-side .title {
-    font-weight: 700;
+    font-weight: 300;
     font-size: 24px;
     display: inline-block;
   }
@@ -873,7 +864,7 @@ body {
     font-size: 1.3rem;
   }
   .section .top-side .title {
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2.125em;
     display: inline-block;
   }
@@ -900,8 +891,8 @@ body {
     font-size: 1.3rem;
   }
   .section .top-side .title {
-    font-weight: 700;
-    font-size: 2.125em;
+    font-size: 3.125em;
+    font-weight: 300;
     display: inline-block;
   }
   .section.gallery .filters ul li {
@@ -973,10 +964,14 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  color: #2f1728;
 }
 #contact-box h1 {
   text-align: center;
-  font-size: 2.125em;
+  font-size: 4.125em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
   padding: 20px 0;
 }
 #contact-box h3 {
@@ -988,6 +983,9 @@ body {
   max-width: 100%;
   height: auto;
 }
+.contacts-container {
+  font-family: "Lora", serif;
+}
 .contacts-container .fas {
   font-size: 24px;
 }
@@ -998,17 +996,9 @@ body {
   margin-bottom: 20px;
 }
 .contacts-btn {
-  /* width: 120px;
-  color: #000;
-  font-size: 75px;
-  padding: 10px;
+  background-color: #fff5d7;
   border: none;
-  border-radius: 5px;
-  transition: 0.5s ease-in-out;
-  background-color: #fff; */
-  background-color: white;
-  border: none;
-  color: black;
+  color: #2f1728;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -1017,14 +1007,11 @@ body {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  border: 2px solid #008cba;
+  border: 2px solid #2f1728;
+  border-radius: 20px;
 }
 .contacts-btn:hover {
-  /* box-shadow: 0 0 0 1px white, 0 0 0 2px #4e524c, 0 0 0 5px #50554c,
-    0 0 0 6.5px white, 0 0 0 7px #e74200;
-  border-radius: 100px;
-  background: none; */
-  background-color: #008cba;
+  background-color: #2f1728;
   color: white;
 }
 .address-details {
@@ -1142,7 +1129,7 @@ body {
   }
   #contact-box h1 {
     text-align: center;
-    font-size: 3.125em;
+    font-size: 4.125em;
   }
   #contact-box h3 {
     font-size: 2.825em;
@@ -1192,7 +1179,8 @@ body {
   padding-bottom: 25.25%;
   position: relative;
   height: 0;
-  border: 2px solid #000;
+  border: 2px solid #2f1728;
+  border-radius: 20px;
 }
 .map-responsive iframe {
   left: 0;
@@ -1207,7 +1195,7 @@ body {
 /* ************* */
 
 .footer-distributed {
-  background: #666;
+  background: #2f1728;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -1232,19 +1220,19 @@ body {
 /* The company logo */
 
 .footer-distributed h3 {
-  color: #ffffff;
+  color: #fff5d7;
   font: normal 36px "Open Sans", cursive;
   margin: 0;
 }
 
 .footer-distributed h3 span {
-  color: lightseagreen;
+  color: #e3425b;
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links {
-  color: #ffffff;
+  color: #fff5d7;
   margin: 20px 0 12px;
   padding: 0;
 }
@@ -1272,7 +1260,7 @@ body {
 
 .footer-distributed .footer-center i {
   background-color: #33383b;
-  color: #ffffff;
+  color: #fff5d7;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -1290,7 +1278,7 @@ body {
 
 .footer-distributed .footer-center p {
   display: inline-block;
-  color: #ffffff;
+  color: #fff5d7;
   font-weight: 400;
   vertical-align: middle;
   margin: 0;
@@ -1330,7 +1318,7 @@ body {
 
 .footer-distributed .footer-company-about {
   line-height: 20px;
-  color: #92999f;
+  color: #fff5d7;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
@@ -1338,7 +1326,7 @@ body {
 
 .footer-distributed .footer-company-about span {
   display: block;
-  color: #ffffff;
+  color: #fff5d7;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -1353,11 +1341,10 @@ body {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #33383b;
+  background-color: #e3425b;
   border-radius: 2px;
-
   font-size: 20px;
-  color: #ffffff;
+  color: #fff5d7;
   text-align: center;
   line-height: 35px;
 
