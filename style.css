@@ -236,7 +236,7 @@ body {
 @media only screen and (max-width: 375px) {
   .home-slider {
     max-width: 100%;
-    height: 350px;
+    height: 650px;
     position: relative;
     top: 0;
   }
@@ -244,13 +244,13 @@ body {
 @media only screen and (max-width: 425px) and (min-width: 375px) {
   .home-slider {
     max-width: 100%;
-    height: 350px;
+    height: 650px;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 425px) {
   .home-slider {
     max-width: 100%;
-    height: 350px;
+    height: 650px;
   }
 }
 .slide1,
