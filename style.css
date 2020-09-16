@@ -832,7 +832,7 @@ body {
 /* ***************************** */
 @media screen and (min-width: 320px) {
   .section.gallery .filters {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 320px) {
