@@ -39,8 +39,8 @@ body {
   position: absolute;
   width: 1rem;
   height: 1.4rem;
-  top: 2.4rem;
-  right: 8rem;
+  top: 3rem;
+  right: 5rem;
   z-index: 2;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
@@ -52,7 +52,7 @@ body {
   right: -6px;
   width: 2.5rem;
   height: 4px;
-  background: #212121;
+  background: #2f1728;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -62,7 +62,7 @@ body {
   top: -0.5rem;
   width: 3rem;
   height: 4px;
-  background: #212121;
+  background: #2f1728;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -72,7 +72,7 @@ body {
   top: 0.5rem;
   width: 2rem;
   height: 4px;
-  background: #212121;
+  background: #2f1728;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -116,7 +116,7 @@ body {
   list-style: none;
   list-style-type: none;
   padding-right: 1rem;
-  background: #fff;
+  background: #fff5d7;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   -webkit-transition: all 0.3s ease-in-out;
@@ -141,14 +141,15 @@ body {
   padding: 1rem 0;
   font-size: 2.5rem;
   font-weight: 400;
+  font-family: "Montserrat", sans-serif;
   line-height: inherit;
-  color: #000;
+  color: #2f1728;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .header .navbar .menu-link:hover {
-  color: #ff5e14;
+  color: #e4495c;
 }
 .header .navbar .menu .menu-list .menu-item:nth-child(1) {
   -webkit-transition-delay: 0.25s;
@@ -167,12 +168,15 @@ body {
   transition-delay: 0.55s;
 }
 .header .navbar .brand {
-  font-family: inherit;
-  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: inherit;
-  color: #000;
+  color: #2f1728;
   text-transform: uppercase;
+}
+.header .navbar .brand span {
+  color: #e3425b;
 }
 .buttons-container {
   display: flex;
