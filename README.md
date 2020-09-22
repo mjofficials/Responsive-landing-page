@@ -1,2 +1,2 @@
 # aram-kalaiyagam
-practice project01
+This is my first website design i created from scratch.
