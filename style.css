@@ -10,7 +10,6 @@ body {
   width: 100%;
   background-color: #fff5d7;
   -webkit-tap-highlight-color: transparent;
-  /* overflow-x: hidden; */
 }
 * {
   padding: 0;
@@ -226,6 +225,15 @@ body {
   );
 }
 
+@media only screen and (min-width: 425px) {
+  .button {
+    width: 45px;
+    height: 45px;
+  }
+  .buttons-container {
+    width: 25%;
+  }
+}
 /* ************ */
 /* HOME SECTION */
 /* ************ */

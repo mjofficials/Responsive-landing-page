@@ -1,20 +1,3 @@
-// Function used for navigation bar
-// $(".navTrigger").click(function () {
-//   $(this).toggleClass("active");
-//   console.log("Clicked menu");
-//   $("#mainListDiv").toggleClass("show_list");
-//   $("#mainListDiv").fadeIn();
-// });
-// Function used to shrink nav bar removing paddings and adding black background
-// $(window).scroll(function () {
-//   if ($(document).scrollTop() > 50) {
-//     $(".nav").addClass("affix");
-//     console.log("OK");
-//   } else {
-//     $(".nav").removeClass("affix");
-//   }
-// });
-// Function used for gallery section
 $('.filters ul li').click(function () {
     $('.filters ul li').removeClass('active');
     $(this).addClass('active');
@@ -65,10 +48,12 @@ const toggleBtn = document.querySelector(".toggle-btn");
 const menu = document.querySelector(".menu");
 const menuList = document.querySelector(".menu-list");
 const menuItems = document.querySelectorAll(".menu-item");
+const menuLinks = document.querySelectorAll(".menu-link");
 
 let showMenu = false;
 
 toggle.addEventListener("click", toggleMenu);
+menuList.addEventListener("click", autoClose);
 
 function toggleMenu() {
     if (!showMenu) {
@@ -87,6 +72,17 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+// adding event listener to menu-list for auto close
+function autoClose() {
+    // console.log("testing");
+    toggleBtn.classList.remove("open");
+    menu.classList.remove("open");
+    menuList.classList.remove("open");
+    menuItems.forEach(item => item.classList.remove("open"));
+};
+
+
 // Function used PARALLAX EFFECTS
 const parallax = document.getElementById("parallax");
 window.addEventListener('scroll', function () {
